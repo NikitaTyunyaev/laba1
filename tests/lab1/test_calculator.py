@@ -1,7 +1,7 @@
 import unittest
 import sys
-sys.path.append(r'/Users/nikitatunaev/Desktop/laba_1/task1')
-from task1 import plus, minus, multiply, divide
+sys.path.append(r'/Users/nikitatunaev/Desktop/laba_1/src')
+from calculator import plus, minus, multiply, divide
 
 class CalculatorTestCase(unittest.TestCase):
 
@@ -17,3 +17,6 @@ class CalculatorTestCase(unittest.TestCase):
     
     def test_divide(self):
         self.assertEqual(divide(10, 2), f"Result: {float(5)}")
+
+if __name__ == "__main__":
+    unittest.main()
