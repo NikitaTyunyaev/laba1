@@ -4,8 +4,8 @@ from typing import List, Dict, Set
 
 class MovieRecommendationSystem:
     def __init__(self, movies_path: str, history_path: str):
-        self.history = self.read_history(history_path)
-        self.movies = self.read_movies(movies_path)
+        self.history = [['2', '1', '3'], ['1', '4', '3'], ['2', '2', '2', '2', '2', '3'], ['9', '6', '7'], ['8', '5', '6', '7'], ['2', '9', '5', '6', '8'], ['2', '3', '4', '7', '5', '9']]
+        self.movies = {'1': 'Мстители: Финал', '2': 'Хатико', '3': 'Дюна', '4': 'Унесенные призраками', '5': 'Ходячий замок', '6': '1+1', '7': 'Список Шиндлера', '8': 'Крёстный отец', '9': 'Зелёная миля'}
 
     def read_history(self, path: str) -> List:
         """ This function return all history of other users from file """
